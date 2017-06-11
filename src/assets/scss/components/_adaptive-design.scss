@@ -1,0 +1,80 @@
+.adaptive-design-section {
+  margin: 50px 20px 80px 20px;
+
+  h2 {
+    margin: 0 0 60px 0;
+    font: normal 25px OpenSans, sans-serif;
+    text-align: center;
+    color: #2e2e2e;
+
+    @include media($medium) {
+      font-size: 30px;
+    }
+  }
+
+  .adaptive-design__content {
+    margin-bottom: 50px;
+
+    @include clearfix;
+  }
+
+  .first-part {
+    @include media($medium) {
+      @include span-columns(7);
+      text-align: right;
+    }
+
+    @include media($large) {
+      @include span-columns(8);
+    }
+  }
+
+  .second-part {
+    font: 16px PTSans, sans-serif;
+    color: #7c7d7d;
+
+    @include media($medium) {
+      @include span-columns(5);
+    }
+
+    @include media($large) {
+      @include span-columns(4);
+    }
+
+    .adaptive-design__statement {
+      margin: 10px 0 40px 0;
+      font-size: 20px;
+    }
+
+    .accent {
+      font-weight: bold;
+      color: #ffcc00;
+    }
+  }
+
+  .adaptive-design__stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  hr {
+    margin: 0 20% 20px 20%;
+    height: 2px;
+    border: none;
+    background-color: #ffeb99;
+  }
+
+  .adaptive-design__description {
+    font: 16px PTSans, sans-serif;
+
+    @include media($medium) {
+      padding: 0 10%;
+      text-indent: 30px;
+    }
+  }
+}

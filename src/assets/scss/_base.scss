@@ -1,0 +1,47 @@
+//* {
+//  outline: 1px solid red;
+//}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.l-container {
+  @include outer-container;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+   display: inline-block;
+ }
+
+.menu {
+  @include list-reset;
+}
+
+a {
+  color: #fcbf31;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,71 @@
+.about-us-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  @include media($medium) {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .about-us {
+    position: relative;
+    margin: 0 20px;
+    padding-bottom: 15px;
+
+    border-bottom: 8px solid #fcbf31;
+    color: #333;
+
+    @include clearfix;
+
+    @include media($medium) {
+      margin: 0 50px;
+      padding-top: 10px;
+      padding-right: 80px;
+      border-right: 8px solid #fcbf31;
+    }
+
+    @include media($large) {
+      padding-left: 40px;
+    }
+  }
+
+  .about-us__bg {
+    @include media($medium) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -51px;
+      margin-right: -46.5px;
+      width: 93px;
+      height: 102px;
+      background: url(../images/about-us-bg.jpg) no-repeat;
+    }
+  }
+
+  .aboust-us__heading {
+    margin: 0;
+    font: 30px OpenSans-Bold, sans-serif;
+    text-transform: uppercase;
+
+    @include media($large) {
+      @include span-columns(4);
+
+      font-size: 50px;
+
+      .large {
+        font-size: 72px;
+        line-height: 72px;
+      }
+    }
+  }
+
+  .about-us__content {
+    margin: 0;
+    font: 16px PTSans, sans-serif;
+
+    @include media($large) {
+      @include span-columns(8);
+    }
+  }
+}

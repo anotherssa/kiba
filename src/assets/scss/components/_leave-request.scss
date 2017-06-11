@@ -1,0 +1,67 @@
+.leave-request-section {
+  padding: 35px;
+  overflow: hidden;
+  background-color: #7c7c7c;
+  font-family: OpenSans, sans-serif;
+
+  h2 {
+    margin: 5px 0 15px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+
+    .uppercase {
+      font-size: 16px;
+    }
+
+    @include media($medium) {
+      text-align: right;
+
+      @include span-columns(5);
+    }
+
+    @include media($large) {
+      @include span-columns(4);
+    }
+  }
+}
+
+.leave-requset__form {
+  display: flex;
+  flex-direction: column;
+
+  @include media($medium) {
+    @include span-columns(7);
+
+    input, button {
+      display: block;
+      margin-left: 25px;
+    }
+  }
+
+  @include media($large) {
+    @include span-columns(8);
+
+    input, button {
+      display: inline-block;
+    }
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+  }
+
+  input, button {
+    @include margin(10px 0 10px null);
+
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px 40px;
+    background-color: #ffcc33;
+  }
+}

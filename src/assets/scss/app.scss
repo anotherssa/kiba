@@ -1,0 +1,25 @@
+@import 'bourbon';
+@import 'grid-settings';
+@import 'neat';
+@import 'mixins';
+
+@import 'base';
+@import 'typography';
+@import 'fonts';
+@import 'animation';
+
+@import 'components/l-header';
+@import 'components/carousel';
+@import 'components/partners';
+@import 'components/about-us';
+@import 'components/services';
+@import 'components/stats';
+@import 'components/leave-request';
+@import 'components/adaptive-design';
+@import 'components/advantages';
+@import 'components/portfolio';
+@import 'components/projects-team';
+@import 'components/gratitudes';
+@import 'components/out-team';
+@import 'components/proposition';
+@import 'components/l-footer';

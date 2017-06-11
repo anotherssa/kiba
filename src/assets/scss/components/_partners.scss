@@ -1,0 +1,33 @@
+.partners-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+}
+
+.partners__image {
+  flex-basis: 50%;
+  margin: 10px 0;
+  text-align: center;
+
+  @include media(375px) {
+    flex-basis: 33%;
+  }
+
+  @include media($medium) {
+    flex-basis: 25%;
+  }
+
+  @include media(800px) {
+    flex-basis: 16%;
+  }
+
+  @include media(1220px) {
+    flex-basis: 8%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

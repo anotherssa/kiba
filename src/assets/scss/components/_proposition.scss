@@ -1,0 +1,116 @@
+.proposition__headline  {
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 10px 0;
+    font: 30px OpenSans, sans-serif;
+    color: #303030;
+    text-transform: uppercase;
+  }
+}
+
+.proposition__statement {
+  display: inline-block;
+  font: 18px PTSans, sans-serif;
+  color: #666;
+
+  .separator {
+    margin: 20px 5% 10px 5%;
+    height: 1px;
+    background-color: #a1a4a7;
+  }
+}
+
+.proposition__make-request {
+  font: 16px PTSans, sans-serif;
+  color: #227fbb;
+}
+
+.proposition__body {
+  padding: 40px 20px;
+  background-color: #495055;
+}
+
+.proposition__our-vk-group {
+  margin-bottom: 20px;
+  justify-content: center;
+
+  @include media($medium) {
+    margin-bottom: 0;
+    @include span-columns(5);
+  }
+
+  @include media($large) {
+    justify-content: flex-end;
+  }
+
+  display: flex !important;
+}
+
+.vk-group-arrow {
+  display: none;
+  margin: auto 0 40px 20px;
+  padding: 0 0 30px 0;
+  min-width: 95px;
+  min-height: 33px;
+  background: url(../images/vk-group-arrow.png) no-repeat left bottom;
+  font: 18px OpenSans, sans-serif;
+  color: #fff;
+
+  @include media($large) {
+    display: block;
+  }
+}
+
+.proposition__leave-request {
+  @include media($medium) {
+    @include span-columns(7);
+  }
+
+  display: flex !important;
+  justify-content: center;
+
+
+
+  .form-container {
+    max-width: 340px;
+    padding: 25px 30px;
+    background-color: #fff;
+    font: 16px OpenSans, sans-serif;
+    text-align: center;
+    color: #1c1c1c;
+
+    .form-container__title {
+      margin-bottom: 20px;
+      text-align: center;
+      font: 16px OpenSans, sans-serif;
+      text-transform: uppercase;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      width: 100%;
+      padding: 7px 10px;
+      border: 1px solid #d9d9d9;
+      background-color: #eee;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      height: 70px;
+      resize: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #fcbf31;
+      text-transform: uppercase;
+      color: #735e32;
+    }
+  }
+}

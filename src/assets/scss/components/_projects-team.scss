@@ -1,0 +1,41 @@
+.projects-team-section {
+  padding: 40px 20px;
+  background-color: #e6e7e7;
+}
+
+.projects-team {
+  @include media($large) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.projects-team__heading {
+  margin: 0 0 20px 0;
+  font: bold 24px OpenSans-Bold, sans-serif;
+  text-align: center;
+  color: #3a3a3a;
+
+  @include media($large) {
+    margin: 0;
+    @include span-columns(5);
+    margin-left: 90px;
+
+    text-align: left;
+  }
+}
+
+.projects-team__list {
+  @include list-reset;
+  @include media($large) {
+    @include span-columns(7);
+    text-align: right;
+  }
+
+  text-align: center;
+}
+
+.projects-team__item {
+  display: inline-block;
+  margin: 5px;
+}

@@ -1,0 +1,132 @@
+.carousel-container.carousel-container_main {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel__item {
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  background-color: rgba(0, 0, 0, .2);
+  font-family: OpenSans, sans-serif;
+  color: #fff;
+}
+
+.carousel__item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__item-heading {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 90%;
+  background-color: rgba(0, 0, 0, .65);
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.44);
+
+  @include media($medium) {
+    padding: 15px 20px;
+    width: 80%;
+    font-size: 28px;
+  }
+
+  @include media($large) {
+    padding: 20px 30px;
+    width: 70%;
+    font-size: 40px;
+  }
+}
+
+.carousel__item-desc {
+  margin-bottom: 30px;
+  width: 75%;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.44);
+
+  @include media($medium) {
+    width: 60%;
+    font-size: 16px;
+  }
+
+  @include media($large) {
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
+.carousel__read-more {
+  display: inline-block;
+  padding: 10px 50px;
+  border: 2px solid #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.carousel__read-more:hover {
+  text-decoration: none;
+}
+
+.carousel__dots {
+  @include  list-reset;
+
+  position: absolute;
+  bottom: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel__dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.carousel__dots button {
+  width: 13px;
+  height: 13px;
+  border: none;
+  background: url(../images/carousel/dot.png) no-repeat;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.carousel__dots li:hover button,
+.carousel__dots li.slick-active button {
+  background: url(../images/carousel/dot-current.png) no-repeat;
+}
+
+.carousel-footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 73px;
+  background: url(../images/main-carousel-footer.png) center no-repeat;
+  background-size: cover;
+
+  .btn_scroll-down {
+    margin-top: 20px;
+  }
+}
+
+.btn_scroll-down {
+  cursor: pointer;
+}
