@@ -291,8 +291,16 @@ img {
   text-align: center;
   overflow: hidden; }
 
+.carousel_main .carousel__item {
+  display: none; }
+
+.carousel_main .carousel__item:first-child {
+  display: flex !important; }
+
+.carousel_main.slick-initialized .carousel__item {
+  display: flex !important; }
+
 .carousel__item {
-  display: flex !important;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
